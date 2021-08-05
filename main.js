@@ -23,6 +23,7 @@ function speak() {
   speak_data_1 = "The first prediction is " + prediction_1;
   speak_data_2 = "The second prediction is " + prediction_2;
   var utterThis = new SpeechSynthesisUtterance(speak_data_1 + speak_data_2);
+  utterThis.rate= 0.5;
   synth.speak(utterThis); 
 }
 function check() {
